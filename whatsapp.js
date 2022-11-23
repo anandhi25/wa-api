@@ -18,7 +18,7 @@ const sessions = new Map()
 const retries = new Map()
 
 const sessionsDir = (sessionId = '') => {
-    return join(__dirname, 'sessions', sessionId ? sessionId : '')
+    return join('tmp', 'sessions', sessionId ? sessionId : '')
 }
 
 const isSessionExists = (sessionId) => {
